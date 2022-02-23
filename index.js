@@ -61,8 +61,9 @@ else
    },200);
 
    $("#level-title").text("Game Over, Press any key to restart" );
+   startOver();
 }
-startOver();
+
 }
 
 function nextSequence()
