@@ -20,6 +20,17 @@ $(document).keydown(function(){
    }
 });
 
+$(document).click(function(){
+   if(!started){
+      
+   $("#level-title").text("level " + level);
+   
+   nextSequence();
+   started = true;
+   }
+});
+
+
 
 
 $(".btn").click(function()
