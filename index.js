@@ -8,9 +8,7 @@ var level = 0;
 
 var started = false;
 
-
-
-$(document).keydown(function(){
+function gameStart(){
    if(!started){
       
    $("#level-title").text("level " + level);
@@ -18,17 +16,11 @@ $(document).keydown(function(){
    nextSequence();
    started = true;
    }
-});
+} 
 
-$(document).click(function(){
-   if(!started){
-      
-   $("#level-title").text("level " + level);
-   
-   nextSequence();
-   started = true;
-   }
-});
+$(document).keydown(gameStart);
+
+$(document).click(gameStart);
 
 
 
